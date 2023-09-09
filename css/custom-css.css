@@ -116,6 +116,7 @@ main {
 
 .about-section {
     height: auto;
+    width: 100%;
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -123,7 +124,7 @@ main {
 }
 
 .about-section__education-content {
-    padding-top: 50px;
+    width: 100%;
 }
 
 .about-section__graduation-container {
@@ -226,7 +227,7 @@ main {
 
 }
 
-.skill-section__framework-container  {
+.skill-section__framework-container {
     padding-top: 100px;
 }
 
@@ -267,4 +268,3 @@ main {
 }
 
 /* end experience-section */
-

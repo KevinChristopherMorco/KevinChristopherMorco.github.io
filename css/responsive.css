@@ -1,5 +1,17 @@
 @media (min-width: 0px) and (max-width: 500px) {
     .start-section {
         padding-left: 0;
+        height: auto;
+    }
+
+    .start-section__list-logo {
+        width: 100%;
+    }
+    .skill-section__stack-item-container{
+        width: 100%;
+    }
+
+    .tailwind-logo{
+        margin: 0 auto;
     }
 }
