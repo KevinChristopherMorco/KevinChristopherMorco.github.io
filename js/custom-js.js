@@ -43,18 +43,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
-let button = document.querySelectorAll('.exp-button')
-let div = document.querySelectorAll('.experience-div')
+let button = document.querySelectorAll('.experience-section__button')
+let div = document.querySelectorAll('.experience-section__experience-content')
 
 button.forEach((buttonEl, index) =>{
 buttonEl.addEventListener('click', () => {
     button.forEach((btn) => {
-        btn.classList.remove('clicked');
+        btn.classList.remove('experience-section__btn-group--active');
     });
 
     // Add the "clicked" class to the clicked button
-    buttonEl.classList.add('btn-click');
-    buttonEl.classList.add('clicked');
+    buttonEl.classList.add('experience-section__btn-group--active');
 
     div.forEach((divs) => {
         divs.style.display = 'none'
