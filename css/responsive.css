@@ -3,7 +3,12 @@
         padding-left: 0;
         height: auto;
     }
-
+    .about-section__school-item-container {
+        width: 100%;
+    }
+    .about-section__graduation-container {
+        width: 100%;
+    }
     .start-section__list-logo {
         width: 100%;
     }
@@ -14,4 +19,6 @@
     .tailwind-logo{
         margin: 0 auto;
     }
+
+    
 }

@@ -62,3 +62,33 @@ buttonEl.addEventListener('click', () => {
     div[index].style.display = 'block';
 })
 })
+
+const hamburger = document.querySelectorAll('.hamburger-icon')
+const eye = document.querySelectorAll('.hamburger-icon i')
+const navListPhone = document.querySelectorAll('.nav-list-phone-container')
+hamburger.forEach((hamburgerIcon) => {
+    hamburgerIcon.addEventListener('click', () => {
+        eye.forEach((eyeIcon) => {
+            if(eyeIcon.classList.contains('fa-eye-slash')){
+                eyeIcon.classList.remove('fa-eye-slash')
+                eyeIcon.classList.add('fa-eye')
+
+            }else{
+                eyeIcon.classList.remove('fa-eye')
+                eyeIcon.classList.add('fa-eye-slash')
+            }
+
+        })
+
+        navListPhone.forEach((navListPhoneEl) =>{
+            navListPhoneEl.classList.toggle('hidden')
+
+            if(navListPhoneEl.classList.contains('hidden')){
+                console.log('It contains the hidden class')
+            }else{
+                navListPhoneEl.style.opacity = 1
+            }
+        })
+
+    })
+})

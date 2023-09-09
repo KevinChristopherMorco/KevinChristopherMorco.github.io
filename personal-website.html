@@ -21,7 +21,16 @@
                         <p class="text-lg font-bold">Kevin</p>
                     </li>
                 </div>
-                <div class="flex justify-around items-center px-4">
+
+                <div class="flex justify-end items-center md:hidden px-4">
+                    <li class="nav-list-item">
+                        <button class="hamburger-icon ">
+                            <i class="fa-regular fa-eye-slash"></i>
+                        </button>
+                    </li>
+                </div>
+
+                <div class="md:flex justify-around items-center hidden px-4">
                     <li class="nav-list-item"><a href="#about">About</a></li>
                     <li class="nav-list-item"><a href="#skill">Skills</a></li>
                     <li class="nav-list-item"><a href="">Experience</a></li>
@@ -29,6 +38,16 @@
                 </div>
             </ul>
         </nav>
+        <div class="nav-list-phone-container hidden py-4">
+            <div class="nav-list-phone-container__nav-list-phone text-center py-4">
+                <ul>
+                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="#about">About</a></li>
+                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="#skill">Skills</a></li>
+                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="">Experience</a></li>
+                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -62,7 +81,7 @@
             </div>
         </section>
 
-        <section class="about-section mt-40 pt-20 px-4 md:px-8 wow fadeInUp" id="about">
+        <section class="about-section mt-60 pt-20 px-4 md:px-8 wow fadeInUp" id="about">
             <div class="about-section__introduction-content">
                 <p class="text-6xl text-center">Who am I?</p>
                 <p class="text-xl text-justify md:text-center pt-10">I'm Kevin Christopher Morco, a driven and dedicated
@@ -77,7 +96,7 @@
                 <div class="grid md:grid-cols-3 pt-20">
                     <div class="col-span-1">
                         <div class="flex justify-center">
-                            <div class="about-section__graduation-container">
+                            <div class="about-section__graduation-container wow slideInLeft">
                                 <div class="flex justify-center pt-4">
                                     <img class="graduation-picture" src="grad-pic2.png" width="150px" height="150px"
                                         alt="">
@@ -91,7 +110,7 @@
                     </div>
                     <div class="col-span-2">
                         <div class="about-section__school-container mt-10 md:mt-0 md:flex md:justify-around">
-                            <div class="about-section__school-item-container mt-10 md:mt-0">
+                            <div class="about-section__school-item-container mt-10 md:mt-0 wow slideInLeft">
                                 <div class="flex justify-center pt-4">
                                     <img src="logo/ges.png" width="75px" height="75px" alt="">
                                 </div>
@@ -100,7 +119,7 @@
                                 <p class="text-center font-bold px-4">2005-2013</p>
 
                             </div>
-                            <div class="about-section__school-item-container mt-10 md:mt-0">
+                            <div class="about-section__school-item-container mt-10 md:mt-0 wow slideInLeft">
                                 <div class="flex justify-center pt-4">
                                     <img src="logo/pgmnhs.png" width="75px" height="75px" alt="">
                                 </div>
@@ -111,7 +130,7 @@
                             </div>
                         </div>
                         <div class="about-section__school-container md:flex md:justify-around pt-10">
-                            <div class="about-section__school-item-container mt-10 md:mt-0">
+                            <div class="about-section__school-item-container mt-10 md:mt-0 wow slideInLeft">
                                 <div class="flex justify-center pt-4">
                                     <img src="logo/acts.png" width="75px" height="75px" alt="">
                                 </div>
@@ -120,7 +139,7 @@
                                 <p class="text-center text-sm font-bold pt-2 px-4">ICT Strand</p>
                                 <p class="text-center font-bold pt-2 px-4">2017-2019</p>
                             </div>
-                            <div class="about-section__school-item-container mt-10 md:mt-0">
+                            <div class="about-section__school-item-container mt-10 md:mt-0 wow slideInLeft">
                                 <div class="flex justify-center pt-4">
                                     <img src="logo/lspu.png" width="75px" height="75px" alt="">
                                 </div>
@@ -135,12 +154,12 @@
                 </div>
             </div>
         </section>
-        <section class="skill-section mt-40 pt-20 px-4 text-center md:text-left md:px-8" id="skill">
+        <section class="skill-section mt-40 pt-20 px-4 text-center md:text-left md:px-8 wow fadeInUp" id="skill">
             <div class="skill-section__tech-stack-container wow fadeInUp">
-                <p class="text-6xl text-center pb-8 wow slideInLeft">Technology Stacks</p>
-                <div class="md:flex md:justify-around md:items-center pt-8 wow slideInLeft">
+                <p class="text-6xl text-center pb-8">Technology Stacks</p>
+                <div class="md:flex md:justify-around md:items-center pt-8">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                        <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
+                        <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                             <i class="fa-brands fa-html5 fa-6x"></i>
                             <div class="pt-4">
                                 <p class="text-xl font-bold pb-2">HyperText Markup Language</p>
@@ -149,7 +168,7 @@
                         </div>
                     </a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                        <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
+                        <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                             <i class="fa-brands fa-css3-alt fa-6x"></i>
                             <div class="pt-4">
                                 <p class="text-xl font-bold pb-2">Cascading Style Sheets</p>
@@ -158,7 +177,7 @@
                         </div>
                     </a>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"></a>
-                    <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
+                    <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                         <i class="fa-brands fa-square-js fa-6x"></i>
                         <div class="pt-4">
                             <p class="text-xl font-bold pb-2">JavaScript</p>
@@ -167,7 +186,7 @@
                     </div>
                     </a>
                     <a href="https://www.php.net/docs.php" target="_blank"></a>
-                    <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
+                    <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                         <i class="fa-brands fa-php fa-6x"></i>
 
                         <div class="pt-4">
@@ -178,10 +197,10 @@
                     </a>
                 </div>
                 <div class="skill-section__framework-container wow fadeInUp">
-                    <p class="text-4xl text-center wow slideInLeft">Frameworks</p>
-                    <div class="md:flex md:justify-around md:items-center pt-8 wow slideInLeft">
+                    <p class="text-4xl text-center">Frameworks</p>
+                    <div class="md:flex md:justify-around md:items-center pt-8 wow">
                         <a href="https://laravel.com/docs/10.x/readme" target="_blank">
-                            <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
+                            <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                                 <i class="fa-brands fa-laravel fa-6x"></i>
                                 <div class="pt-4">
                                     <p class="text-xl font-bold pb-2">Laravel</p>
@@ -190,7 +209,7 @@
                             </div>
                         </a>
                         <a href="https://getbootstrap.com/" target="_blank">
-                            <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
+                            <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                                 <i class="fa-brands fa-bootstrap fa-6x"></i>
                                 <div class="pt-4">
                                     <p class="text-xl font-bold pb-2">Bootstrap</p>
@@ -199,8 +218,9 @@
                             </div>
                         </a>
                         <a href="https://v2.tailwindcss.com/docs" target="_blank">
-                            <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 ">
-                                <img class="tailwind-logo" src="logo/tailwind-css.png" width="150px" height="150px" alt="">
+                            <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
+                                <img class="tailwind-logo" src="logo/tailwind-css.png" width="150px" height="150px"
+                                    alt="">
                                 <div class="pt-4">
                                     <p class="text-xl font-bold pb-2">Tailwind</p>
                                     <p class="text-sm">Utility-first CSS framework.</p>
@@ -239,6 +259,53 @@
             </div>
         </section>
     </main>
+    <footer class="footer-section py-20 px-4 mt-20 wow fadeInUp">
+        <div class="footer-section__portfolio-details text-white">
+            <p class="text-4xl text-center">Kevin's Portfolio</p>
+            <div class="">
+                <ul class="flex justify-around items-center py-4">
+                    <li class="nav-list-item"><a href="#about">About</a></li>
+                    <li class="nav-list-item"><a href="#skill">Skills</a></li>
+                    <li class="nav-list-item"><a href="">Experience</a></li>
+                    <li class="nav-list-item"><a href="">Contact</a></li>
+                </ul>
+
+                <div class="footer-section__logo-container py-8">
+                    <p class="text-4xl text-center py-10">Connects</p>
+                    <ul class="footer-section__list-logo flex justify-around items-center md:justify-between">
+                        <li>
+                            <a href="https://www.linkedin.com/in/kevin-christopher-morco-a9a361289/" target="_blank"><i
+                                    class="fa-brands fa-linkedin fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/KevinChristopherMorco" target="_blank"><i
+                                    class="fa-brands fa-github fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/kevin.morco.5/" target="_blank"><i
+                                    class="fa-brands fa-facebook fa-2x" target="_blank"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section__contact-container py-8">
+                    <p class="text-4xl text-center">Contacts</p>
+                    <div class="footer-section__contact-item-container py-8">
+                        <div class="flex justify-center items-center py-4">
+                            <p class="text-xl"><i class="fa-solid fa-location-dot px-2"></i> Gatid, Santa Cruz, Laguna
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center py-4">
+                            <p class="text-xl"><i class="fa-solid fa-envelope px-2"></i>kevchristophermorco@gmail.com</p>
+                        </div>
+                        <div class="flex justify-center items-center py-4">
+                            <p class="text-xl"><i class="fa-solid fa-phone px-2"></i> +63 927-104-420</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/wow.min.js"></script>
     <script src="js/custom-js.js"></script>
