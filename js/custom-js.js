@@ -96,8 +96,10 @@ hamburger.forEach((hamburgerEl) => {
 let icon = document.querySelectorAll('a')
 
 icon.forEach((iconEl)=>{
-    iconEl.addEventListener('click', () =>{
-        alert('You are going to leave this page, proceed?')
+    iconEl.addEventListener('click', (event) =>{
+        if(confirm('You are about to open this link to a new tab, proceed?') === false){
+            event.preventDefault();
+        }
     })
 })
 
