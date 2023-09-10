@@ -63,8 +63,8 @@ button.forEach((buttonEl, index) => {
     })
 })
 
-const hamburger = document.querySelectorAll('.hamburger-icon')
-const eye = document.querySelectorAll('.hamburger-icon i')
+const hamburger = document.querySelectorAll('.eye-icon-container')
+const eye = document.querySelectorAll('.eye-icon-container i')
 const navListPhone = document.querySelectorAll('.nav-list-phone-container')
 hamburger.forEach((hamburgerEl) => {
     hamburgerEl.addEventListener('click', () => {
@@ -93,7 +93,7 @@ hamburger.forEach((hamburgerEl) => {
     })
 })
 
-let icon = document.querySelectorAll('a')
+let icon = document.querySelectorAll('.external-link')
 
 icon.forEach((iconEl)=>{
     iconEl.addEventListener('click', (event) =>{
