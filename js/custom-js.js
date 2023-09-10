@@ -44,51 +44,53 @@ window.addEventListener('scroll', () => {
 });
 
 let button = document.querySelectorAll('.experience-section__button')
-let div = document.querySelectorAll('.experience-section__experience-content')
+let div = document.querySelectorAll('.experience-section__work-content')
 
-button.forEach((buttonEl, index) =>{
-buttonEl.addEventListener('click', () => {
-    button.forEach((btn) => {
-        btn.classList.remove('experience-section__btn-group--active');
-    });
+button.forEach((buttonEl, index) => {
+    buttonEl.addEventListener('click', () => {
+        button.forEach((btn) => {
+            btn.classList.remove('experience-section__btn-group--active');
+        });
 
-    // Add the "clicked" class to the clicked button
-    buttonEl.classList.add('experience-section__btn-group--active');
+        // Add the "clicked" class to the clicked button
+        buttonEl.classList.add('experience-section__btn-group--active');
 
-    div.forEach((divs) => {
-        divs.style.display = 'none'
+        div.forEach((divs) => {
+            divs.style.display = 'none'
+        })
+        // Show the corresponding div based on the button's index
+        div[index].style.display = 'block';
     })
-    // Show the corresponding div based on the button's index
-    div[index].style.display = 'block';
-})
 })
 
 const hamburger = document.querySelectorAll('.hamburger-icon')
 const eye = document.querySelectorAll('.hamburger-icon i')
 const navListPhone = document.querySelectorAll('.nav-list-phone-container')
-hamburger.forEach((hamburgerIcon) => {
-    hamburgerIcon.addEventListener('click', () => {
-        eye.forEach((eyeIcon) => {
-            if(eyeIcon.classList.contains('fa-eye-slash')){
-                eyeIcon.classList.remove('fa-eye-slash')
-                eyeIcon.classList.add('fa-eye')
+hamburger.forEach((hamburgerEl) => {
+    hamburgerEl.addEventListener('click', () => {
+        eye.forEach((eyeEl) => {
+            if (eyeEl.classList.contains('fa-eye-slash')) {
+                eyeEl.classList.remove('fa-eye-slash')
+                eyeEl.classList.add('fa-eye')
 
-            }else{
-                eyeIcon.classList.remove('fa-eye')
-                eyeIcon.classList.add('fa-eye-slash')
+            } else {
+                eyeEl.classList.remove('fa-eye')
+                eyeEl.classList.add('fa-eye-slash')
             }
 
         })
 
-        navListPhone.forEach((navListPhoneEl) =>{
+        navListPhone.forEach((navListPhoneEl) => {
             navListPhoneEl.classList.toggle('hidden')
 
-            if(navListPhoneEl.classList.contains('hidden')){
+            if (navListPhoneEl.classList.contains('hidden')) {
                 console.log('It contains the hidden class')
-            }else{
+            } else {
                 navListPhoneEl.style.opacity = 1
             }
         })
 
     })
 })
+
+

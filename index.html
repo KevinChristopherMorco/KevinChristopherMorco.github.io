@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/custom-css.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 </head>
 
 <body>
@@ -33,8 +36,8 @@
                 <div class="md:flex justify-around items-center hidden px-4">
                     <li class="nav-list-item"><a href="#about">About</a></li>
                     <li class="nav-list-item"><a href="#skill">Skills</a></li>
-                    <li class="nav-list-item"><a href="">Experience</a></li>
-                    <li class="nav-list-item"><a href="">Contact</a></li>
+                    <li class="nav-list-item"><a href="#experience">Experience</a></li>
+                    <li class="nav-list-item"><a href="#contact">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -231,48 +234,132 @@
                 </div>
             </div>
         </section>
-        <section class="experience-section wow fadeInUp" id="Education">
-            <p class="text-center font-bold text-6xl ">Experiences</p>
-            <div class="experience-section__btn-group pt-10">
-                <div class="flex justify-center items-center">
-                    <button class="experience-section__button mr-4">2017</button>
-                    <button class="experience-section__button mr-4">2023</button>
-                </div>
-
-                <div class="flex justify-center items-center pt-20">
-                    <div class="experience-section__experience-content">
-                        <p class="text-3xl text-center pt-8"> Management Information Systems Office (Province of Laguna)
-                        </p>
-                        <div class="flex justify-center">
-                            <img class="pt-4" src="logo/miso.png" width="200px" height="200px" alt="">
+        <section class="experience-section wow fadeInUp px-4 py-4" id="experience">
+            <p class="text-center font-bold text-6xl py-4 ">Experiences</p>
+            <div class="grid md:grid-cols-2 gap-4  wow slideInLeft">
+                <div class="col-span-1">
+                    <div class="experience-section_experience-container flex items-center  mt-10 px-2 py-4">
+                        <img class="pt-4" src="logo/miso.png" width="100px" height="100px" alt="">
+                        <div class="text-center">
+                            <p class="text-sm font-bold">Management Information Systems Office (Province of Laguna)</p>
+                            <p class="text-sm pt-2">Intern</p>
+                            <p class="text-sm pt-2">2018</p>
                         </div>
                     </div>
-                    <div class="experience-section__experience-content">
-                        <p class="text-3xl text-center pt-8"> Provincial Disaster Risk Reduction and Management Office
-                            (Province of Laguna)
-                        </p>
-                        <div class="flex justify-center">
-                            <img class="pt-4" src="logo/pdrrmo.png" width="200px" height="200px" alt="">
+                </div>
+                <div class="col-span-1">
+                    <div class="experience-section_experience-container flex items-center mt-10 px-2 py-4">
+                        <img class="pt-4" src="logo/pdrrmo.png" width="75px" height="75px" alt="">
+                        <div class="text-center">
+                            <p class="text-sm font-bold">Provincial Disaster Risk Reduction and Management Office
+                                (Province
+                                of
+                                Laguna)</p>
+                            <p class="text-sm pt-2">Intern</p>
+                            <p class="text-sm pt-2">2023</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="experience-section__btn-group pt-10 wow fadeInUp">
+                <p class="text-center text-4xl py-10">Works</p>
+                <div class="flex justify-center items-center">
+                    <button class="experience-section__button mr-4">Websites</button>
+                    <button class="experience-section__button mr-4">Certificates</button>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center pt-20 wow slideInLeft">
+                <div class="experience-section__work-content">
+                    <div class="grid md:grid-cols-2 md:gap-4">
+                        <!-- <div class="experience-section__slider-container">
+                        <div class="experience-section__image-container flex justify-around items-center">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <img src="logo/acts.png" width="150px" height="150px" alt="">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div> -->
+                        <div class="col-span-1">
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/1.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/1.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/5.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/5.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/6.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/6.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/7.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/7.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/8.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/8.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/9.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/9.png" alt="">
+                                </a>
+                            </div>
+
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/2.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/2.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="experience-section__image-container py-2">
+                                <a data-src="pictures/3.png" data-fancybox="gallery" data-caption="Single image">
+                                    <img src="pictures/3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-section__work-content">
+                    <p class="text-3xl text-center pt-8"> Provincial Disaster Risk Reduction and Management Office
+                        (Province of Laguna)
+                    </p>
+                    <div class="flex justify-center">
+                        <img class="pt-4" src="logo/pdrrmo.png" width="200px" height="200px" alt="">
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
-    <footer class="footer-section py-20 px-4 mt-20 wow fadeInUp">
-        <div class="footer-section__portfolio-details text-white">
-            <p class="text-4xl text-center">Kevin's Portfolio</p>
-            <div class="">
-                <ul class="flex justify-around items-center py-4">
-                    <li class="nav-list-item"><a href="#about">About</a></li>
-                    <li class="nav-list-item"><a href="#skill">Skills</a></li>
-                    <li class="nav-list-item"><a href="">Experience</a></li>
-                    <li class="nav-list-item"><a href="">Contact</a></li>
+    <footer class="footer-section py-20 px-4 mt-20 wow fadeInUp" id="contact">
+        <div class="grid md:grid-cols-3 footer-section__portfolio-details text-white">
+            <div class="col-span-1">
+                <p class="text-4xl text-center">Kevin's Portfolio</p>
+                <ul class="flex justify-around items-center md:block md:text-center py-4">
+                    <li class="nav-list-item md:py-2"><a href="#about">About</a></li>
+                    <li class="nav-list-item md:py-2"><a href="#skill">Skills</a></li>
+                    <li class="nav-list-item md:py-2"><a href="#experience">Experience</a></li>
+                    <li class="nav-list-item md:py-2"><a href="#contact">Contact</a></li>
                 </ul>
-
-                <div class="footer-section__logo-container py-8">
-                    <p class="text-4xl text-center py-10">Connects</p>
-                    <ul class="footer-section__list-logo flex justify-around items-center md:justify-between">
+            </div>
+            <div class="col-span-1">
+                <div class="footer-section__logo-container py-8 md:py-0">
+                    <p class="text-4xl text-center py-10 md:py-0 md:pb-10">Connects</p>
+                    <ul class="footer-section__list-logo flex justify-around items-center md:justify-around">
                         <li>
                             <a href="https://www.linkedin.com/in/kevin-christopher-morco-a9a361289/" target="_blank"><i
                                     class="fa-brands fa-linkedin fa-2x"></i></a>
@@ -287,19 +374,21 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="footer-section__contact-container py-8">
+            </div>
+            <div class="col-span-1">
+                <div class="footer-section__contact-container py-8 md:py-0">
                     <p class="text-4xl text-center">Contacts</p>
-                    <div class="footer-section__contact-item-container py-8">
+                    <div class="footer-section__contact-item-container py-8 md:py-2">
                         <div class="flex justify-center items-center py-4">
-                            <p class="text-xl"><i class="fa-solid fa-location-dot px-2"></i> Gatid, Santa Cruz, Laguna
+                            <p class="text-lg"><i class="fa-solid fa-location-dot px-2"></i> Gatid, Santa Cruz, Laguna
                             </p>
                         </div>
                         <div class="flex justify-center items-center py-4">
-                            <p class="text-xl"><i class="fa-solid fa-envelope px-2"></i>kevchristophermorco@gmail.com</p>
+                            <p class="text-lg"><i class="fa-solid fa-envelope px-2"></i>kevchristophermorco@gmail.com
+                            </p>
                         </div>
                         <div class="flex justify-center items-center py-4">
-                            <p class="text-xl"><i class="fa-solid fa-phone px-2"></i> +63 927-104-420</p>
+                            <p class="text-lg"><i class="fa-solid fa-phone px-2"></i> +63 927-104-420</p>
                         </div>
                     </div>
                 </div>
@@ -307,8 +396,15 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            //
+        });    
+    </script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom-js.js"></script>
+
 
 </body>
 

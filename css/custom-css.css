@@ -78,11 +78,11 @@ nav li.active {
     height: auto;
     position: fixed;
     top: 75px;
-    background-color:  rgba(73, 118, 231, 0.9);    
+    background-color: rgba(73, 118, 231, 0.9);
     z-index: 999;
 }
 
-.nav-list-phone-container__nav-list-item{
+.nav-list-phone-container__nav-list-item {
     text-decoration: none;
     color: #fff;
 }
@@ -261,11 +261,18 @@ main {
     background-color: #F7F7F7;
 }
 
-.experience-section__experience-content {
+.experience-section__work-content {
     display: none;
-    height: 500px;
+    height: auto;
     width: 90%;
     background-color: #fff;
+}
+
+.experience-section_experience-container {
+    background-color: #E4E4E4;
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
 }
 
 .experience-section__btn-group button {
@@ -285,11 +292,26 @@ main {
     box-shadow: none !important;
 }
 
+.experience-section__slider-container{
+    width: 100%;
+    background-color: burlywood;
+    height: 200px;
+}
+
+.experience-section__image-container{
+    width: 100%;
+}
+
+.experience-section__image-container img{
+    height: 200px;
+    width: 100%;
+}
+
 /* end experience-section */
 
 /* start footer-section */
 
-footer{
+footer {
     width: 100%;
     height: auto;
     background-color: #4976E7;
