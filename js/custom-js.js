@@ -117,6 +117,7 @@ const alertLink = () => {
 
     icon.forEach((iconEl) => {
         iconEl.addEventListener('click', (event) => {
+            console.log(iconEl.getAttribute('href'))
             event.preventDefault()
             Swal.fire({
                 title: 'This link will open to a new tab',
@@ -146,3 +147,9 @@ const alertLink = () => {
 }
 
 alertLink()
+
+// Fancybox carousel library
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+    //
+});    
