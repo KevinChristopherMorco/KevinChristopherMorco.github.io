@@ -27,3 +27,33 @@
 
     
 }
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .start-section {
+        padding-left: 0;
+        height: auto;
+    }
+    .about-section__school-item-container {
+        width: 40%;
+    }
+    .about-section__graduation-container {
+        width: 70%;
+    }
+    .start-section__list-logo {
+        width: 100%;
+    }
+    .skill-section__stack-item-container{
+        width: 100%;
+    }
+
+    .tailwind-logo{
+        margin: 0 auto;
+    }
+
+    .experience-section__image-container img{
+        height: 400px;
+        width: 100%;
+    }
+
+    
+}
