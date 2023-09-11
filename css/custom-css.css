@@ -73,7 +73,7 @@ nav li.active {
     text-underline-offset: 15px;
 }
 
-.nav-list-phone-container {
+.navbar-header__nav-list-phone-container{
     width: 100%;
     height: auto;
     position: fixed;
@@ -82,7 +82,7 @@ nav li.active {
     z-index: 999;
 }
 
-.nav-list-phone-container__nav-list-item {
+.navbar-header__nav-list-phone-container-nav-list-item {
     text-decoration: none;
     color: #fff;
 }
@@ -161,20 +161,20 @@ main {
 
 
 .about-section__school-container:nth-of-type(1) .about-section__school-item-container:nth-of-type(1) {
-    box-shadow: 0 5px #E9BE77;
+    box-shadow: 0 5px #250EB4;
 
 }
 
 .about-section__school-container:nth-of-type(1) .about-section__school-item-container:nth-of-type(2) {
-    box-shadow: 0 5px #14C1CB;
+    box-shadow: 0 5px #081C02;
 }
 
 .about-section__school-container:nth-of-type(2) .about-section__school-item-container:nth-of-type(1) {
-    box-shadow: 0 5px #6D10ED;
+    box-shadow: 0 5px #37C70E;
 }
 
 .about-section__school-container:nth-of-type(2) .about-section__school-item-container:nth-of-type(2) {
-    box-shadow: 0 5px #F73157;
+    box-shadow: 0 5px #122453;
 }
 
 /* end about-section */
@@ -240,10 +240,46 @@ main {
 .skill-section__stack-item-container:hover {
     transform: translate(10px, -10px);
     cursor: pointer;
-    box-shadow: -5px 6px #CACACA;
-    border: 1px solid #919191;
+}
+
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(1) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(221, 75, 37, .5);
+    border: 1px solid rgba(221, 75, 37, .5);
 
 }
+
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(2) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(37, 75, 221, .5);
+    border: 1px solid rgba(37, 75, 221, .5);
+}
+
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(3) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(233, 212, 77, .5);
+    border: 1px solid rgba(233, 212, 77, .5);
+}
+
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(4) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(115, 119, 173, .5);
+    border: 1px solid rgba(115, 119, 173, .5);
+}
+
+.skill-section__frawework-stack .external-link:nth-of-type(1) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(255, 0, 0, .5);
+    border: 1px solid rgba(255, 0, 0, .5);
+}
+
+.skill-section__frawework-stack .external-link:nth-of-type(2) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(109, 16, 237, .5);
+    border: 1px solid rgba(109, 16, 237, .5);
+}
+
+.skill-section__frawework-stack .external-link:nth-of-type(3) .skill-section__stack-item-container:hover{
+    box-shadow: -5px 6px rgba(53, 190, 248, .5);
+    border: 1px solid rgba(53, 190, 248, .5);
+}
+
+
+
 
 .skill-section__framework-container {
     padding-top: 100px;
@@ -330,3 +366,9 @@ footer {
 }
 
 /* end footer-section */
+
+/*Sweet Alert 2 Custom Class */
+.swal2-cancel.custom-cancel-button {
+    color: #000; /* Change this to your desired text color */
+    background-color: #F0F0F0;
+  }

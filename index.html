@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <nav class="shadow-md wow fadeIn" id="navbar">
+        <nav class="navbar-header shadow-md wow fadeIn" id="navbar">
             <ul class="flex justify-around items-center">
                 <div class="flex justify-between items-center px-4">
                     <li>
@@ -33,23 +33,21 @@
                     </li>
                 </div>
 
-                <div class="md:flex justify-around items-center hidden px-4">
-                    <li class="nav-list-item"><a href="#about">About</a></li>
-                    <li class="nav-list-item"><a href="#skill">Skills</a></li>
-                    <li class="nav-list-item"><a href="#experience">Experience</a></li>
-                    <li class="nav-list-item"><a href="#contact">Contact</a></li>
+                <div class="navbar-header__nav-list-large-container hidden md:flex md:justify-around md:items-center  px-4">
+                    <li class="navbar-header__nav-list-large-container-nav-list-item"><a href="#about">About</a></li>
+                    <li class="navbar-header__nav-list-large-container-nav-list-item"><a href="#skill">Skills</a></li>
+                    <li class="navbar-header__nav-list-large-container-nav-list-item"><a href="#experience">Experience</a></li>
+                    <li class="navbar-header__nav-list-large-container-nav-list-item"><a href="#contact">Contact</a></li>
                 </div>
             </ul>
         </nav>
-        <div class="nav-list-phone-container hidden py-4">
-            <div class="nav-list-phone-container__nav-list-phone text-center py-4">
-                <ul>
-                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="#about">About</a></li>
-                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="#skill">Skills</a></li>
-                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="">Experience</a></li>
-                    <li class="nav-list-phone-container__nav-list-item py-3"><a href="">Contact</a></li>
-                </ul>
-            </div>
+        <div class="navbar-header__nav-list-phone-container text-center hidden py-4">
+            <ul>
+                <li class="navbar-header__nav-list-phone-container-nav-list-item py-3"><a href="#about">About</a></li>
+                <li class="navbar-header__nav-list-phone-container-nav-list-item py-3"><a href="#skill">Skills</a></li>
+                <li class="navbar-header__nav-list-phone-container-nav-list-item py-3"><a href="#experience">Experience</a></li>
+                <li class="navbar-header__nav-list-phone-container-nav-list-item py-3"><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
 
@@ -160,7 +158,7 @@
         <section class="skill-section mt-40 pt-20 px-4 text-center md:text-left md:px-8 wow fadeInUp" id="skill">
             <div class="skill-section__tech-stack-container wow fadeInUp">
                 <p class="text-center pb-8 text-5xl font-bold md:text-6xl">Technology Stacks</p>
-                <div class="md:flex md:justify-around md:items-center pt-8">
+                <div class="skill-section__vanilla-tech-stack md:flex md:justify-around md:items-center pt-8">
                     <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
                         <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                             <i class="fa-brands fa-html5 fa-6x"></i>
@@ -179,29 +177,30 @@
                             </div>
                         </div>
                     </a>
-                    <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                    <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
-                        <i class="fa-brands fa-square-js fa-6x"></i>
-                        <div class="pt-4">
-                            <p class="text-xl font-bold pb-2">JavaScript</p>
-                            <p class="text-sm">Adding interactivity and functionality.</p>
+                    <a class="external-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        target="_blank">
+                        <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
+                            <i class="fa-brands fa-square-js fa-6x"></i>
+                            <div class="pt-4">
+                                <p class="text-xl font-bold pb-2">JavaScript</p>
+                                <p class="text-sm">Adding interactivity and functionality.</p>
+                            </div>
                         </div>
-                    </div>
                     </a>
                     <a class="external-link" href="https://www.php.net/docs.php" target="_blank">
-                    <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
-                        <i class="fa-brands fa-php fa-6x"></i>
+                        <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
+                            <i class="fa-brands fa-php fa-6x"></i>
 
-                        <div class="pt-4">
-                            <p class="text-xl font-bold pb-2">Hypertext Preprocessor</p>
-                            <p class="text-sm">Server-side scripting language.</p>
+                            <div class="pt-4">
+                                <p class="text-xl font-bold pb-2">Hypertext Preprocessor</p>
+                                <p class="text-sm">Server-side scripting language.</p>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
                 <div class="skill-section__framework-container wow fadeInUp">
                     <p class="text-center text-4xl font-bold md:text-6xl">Frameworks</p>
-                    <div class="md:flex md:justify-around md:items-center pt-8 wow">
+                    <div class="skill-section__frawework-stack md:flex md:justify-around md:items-center pt-8 wow">
                         <a class="external-link" href="https://laravel.com/docs/10.x/readme" target="_blank">
                             <div class="skill-section__stack-item-container mt-6 px-4 pt-4 md:mt-0 wow slideInLeft ">
                                 <i class="fa-brands fa-laravel fa-6x"></i>
@@ -252,7 +251,8 @@
                     <div class="experience-section_experience-container flex items-center mt-10 px-2 py-4">
                         <img class="pt-4" src="logo/pdrrmo.png" width="75px" height="75px" alt="">
                         <div class="text-center w-full">
-                            <p class="text-sm md:text-base font-bold">Provincial Disaster Risk Reduction and Management Office</p>
+                            <p class="text-sm md:text-base font-bold">Provincial Disaster Risk Reduction and Management
+                                Office</p>
                             <p class="text-sm md:text-base font-bold">(Province of Laguna)</p>
                             <p class="text-sm pt-2">Intern</p>
                             <p class="text-sm pt-2">2023</p>
@@ -335,7 +335,9 @@
                 <div class="experience-section__work-content">
                     <p class="text-center text-lg font-bold text-red-600 py-4">Note: Domain is currently down</p>
                     <video controls>
-                        <source src="https://github.com/KevinChristopherMorco/KevinChristopherMorco.github.io/blob/main/video-demo.mp4?raw=true" type="video/mp4">
+                        <source
+                            src="https://github.com/KevinChristopherMorco/KevinChristopherMorco.github.io/blob/main/video-demo.mp4?raw=true"
+                            type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -399,6 +401,8 @@
             //
         });    
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="js/wow.min.js"></script>
     <script src="js/custom-js.js"></script>
 
