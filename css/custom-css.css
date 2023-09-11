@@ -301,7 +301,6 @@ main {
     display: none;
     height: auto;
     width: 90%;
-    background-color: #fff;
 }
 
 .experience-section_experience-container {
@@ -326,12 +325,6 @@ main {
 .experience-section__btn-group--active {
     transform: translate(-10px, 10px);
     box-shadow: none !important;
-}
-
-.experience-section__slider-container{
-    width: 100%;
-    background-color: burlywood;
-    height: 200px;
 }
 
 .experience-section__image-container{
