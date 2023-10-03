@@ -1,36 +1,36 @@
 new WOW().init();
-let textArray = ['Web Developer','Programmer'];
-let element = document.getElementById('typewriter-text')
+// let textArray = ['Web Developer','Programmer'];
+// let element = document.getElementById('typewriter-text')
 
-let currentStringIndex = 0
-let currentCharIndex = 0
+// let currentStringIndex = 0
+// let currentCharIndex = 0
 
-// Type writer effect for span
+// // Type writer effect for span
 
-let typeWriter = () => {
-    let currentString = textArray[currentStringIndex]
-    if (currentCharIndex < currentString.length) {
-        element.innerHTML += currentString[currentCharIndex]
-        currentCharIndex++
-        setTimeout(typeWriter, 200)
+// let typeWriter = () => {
+//     let currentString = textArray[currentStringIndex]
+//     if (currentCharIndex < currentString.length) {
+//         element.innerHTML += currentString[currentCharIndex]
+//         currentCharIndex++
+//         setTimeout(typeWriter, 200)
 
-    } else {
-        currentStringIndex++
-        currentCharIndex = 0
-        element.innerHTML = ' '
-        if (currentStringIndex < textArray.length) {
-            setTimeout(typeWriter, 300);
-        }
-    }
+//     } else {
+//         currentStringIndex++
+//         currentCharIndex = 0
+//         element.innerHTML = ' '
+//         if (currentStringIndex < textArray.length) {
+//             setTimeout(typeWriter, 300);
+//         }
+//     }
 
-    if (currentStringIndex >= textArray.length) {
-        currentStringIndex = 0
-        setTimeout(typeWriter, 1000)
+//     if (currentStringIndex >= textArray.length) {
+//         currentStringIndex = 0
+//         setTimeout(typeWriter, 1000)
 
-    }
-}
+//     }
+// }
 
-typeWriter();
+// typeWriter();
 
 // Enable sticky value on navbar oscroll
 
@@ -94,13 +94,14 @@ const nightMode = () => {
                 document.documentElement.style.setProperty('--facebook', '#fff');
                 document.documentElement.style.setProperty('--span-text', '#fff')
                 document.documentElement.style.setProperty('--footer', '#000')
+                document.documentElement.style.setProperty('--card', '#000')
 
             } else {
                 //set to lightmode
 
                 modeIconEl.classList.add('fa-moon')
                 modeIconEl.classList.remove('fa-sun')
-               
+
 
                 document.documentElement.style.setProperty('--primary-color', '#F7F7F7');
                 document.documentElement.style.setProperty('--foreground-color', '#000');
@@ -109,6 +110,7 @@ const nightMode = () => {
                 document.documentElement.style.setProperty('--facebook', '#0866FF');
                 document.documentElement.style.setProperty('--span-text', '#4976E7')
                 document.documentElement.style.setProperty('--footer', '#4976E7')
+                document.documentElement.style.setProperty('--card', '#fff')
 
 
             }
@@ -161,39 +163,42 @@ const alertLink = () => {
 
     icon.forEach((iconEl) => {
         iconEl.addEventListener('click', (event) => {
-            console.log(iconEl.getAttribute('href'))
-            event.preventDefault()
-            Swal.fire({
-                title: 'This link will open to a new tab',
-                text: "Do you want to proceed?",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                customClass: {
-                    cancelButton: 'custom-cancel-button',
-                },
-                confirmButtonText: 'Proceed',
-                reverseButtons: true
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    window.open(iconEl.getAttribute('href'), '_blank');
 
-                } else {
-                    event.preventDefault();
-                }
-            })
-            // if (confirm('You are about to open this link to a new tab, proceed?') === false) {
-            //     event.preventDefault();
-            // }
+            if (iconEl.classList.contains('video')) {
+                Swal.fire({
+                    title: 'Video not yet available',
+                    text: "Still working on it! :)",
+                    icon: 'warning',
+                    confirmButtonText: 'Ok',
+                })
+            } else {
+                console.log(iconEl.getAttribute('href'))
+                event.preventDefault()
+                Swal.fire({
+                    title: 'This link will open to a new tab',
+                    text: "Do you want to proceed?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    customClass: {
+                        cancelButton: 'custom-cancel-button',
+                    },
+                    confirmButtonText: 'Proceed',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.open(iconEl.getAttribute('href'), '_blank');
 
+                    } else {
+                        event.preventDefault();
+                    }
+                })
+                // if (confirm('You are about to open this link to a new tab, proceed?') === false) {
+                //     event.preventDefault();
+                // }
+            }
         })
     })
 }
 
 alertLink()
-
-// Fancybox carousel library
-
-Fancybox.bind('[data-fancybox="gallery"]', {
-    //
-});    
