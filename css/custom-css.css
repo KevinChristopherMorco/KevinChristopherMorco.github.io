@@ -1,41 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Mono&display=swap');
+
+:root {
+    --scrollbar-thumb: cyan;
+    --primary-color: #000;
+    --foreground-color: #fff;
+    --span-text: #fff;
+    --linkedin: #fff;
+    --github: #fff;
+    --facebook: #fff;
+    --gradpic: #000;
+    --yellow: yellow;
+    --blue : blue;
+    --footer: #000 ;
+
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
-
+    font-family: 'Roboto Mono', monospace;
     /* debug */
     /* outline: 1px solid red; */
 }
-
 
 ::-webkit-scrollbar {
     width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #fff;
+    background: var(--foreground-color);
     width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #0077B5;
+    background-color: var(--scrollbar-thumb);
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #AAD1E6;
-}
 
 html,
 body {
     width: 100%;
+    background-color: var(--primary-color);
 }
 
 nav {
-    background-color: #F7F7F7;
+    background-color: var(--primary-color);
+    color: var(--foreground-color);
     height: 75px;
     width: 100%;
     transition: height .3s ease;
@@ -47,7 +60,8 @@ nav {
     position: fixed;
     top: 0;
     height: 80px;
-    background-color: #fff;
+    background-color: var(--primary-color);
+    color: var(--foreground-color);
     transition: height .3s ease;
 }
 
@@ -73,7 +87,7 @@ nav li.active {
     text-underline-offset: 15px;
 }
 
-.navbar-header__nav-list-phone-container{
+.navbar-header__nav-list-phone-container {
     width: 100%;
     height: auto;
     position: fixed;
@@ -84,12 +98,22 @@ nav li.active {
 
 .navbar-header__nav-list-phone-container-nav-list-item {
     text-decoration: none;
-    color: #fff;
+    color: var(--foreground-color);
 }
 
 
 .nav-list-phone-container__nav-list-phone {
     width: 100%;
+}
+
+.fa-sun{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.fa-moon{
+    color: var(--blue);
+    cursor: pointer;
 }
 
 main {
@@ -101,21 +125,25 @@ main {
 /* start-section */
 
 .start-section {
-    padding-left: 15%;
-    height: 490px;
+    height: auto;
     width: 100%;
-    background-color: #F7F7F7;
+    background-color: var(--primary-color);
 }
 
-.start-section__name-content {
-    padding-top: 10%;
+.start-section p {
+    color: var(--foreground-color);
 }
+
+.start-section span {
+    color: var(--span-text);
+}
+
 
 .start-section__list-logo {
     width: 30%;
 }
 
-.start-section__list-logo .fa-linkedin {
+/* .start-section__list-logo .fa-linkedin {
     color: #0077B5;
 }
 
@@ -125,7 +153,20 @@ main {
 
 .start-section__list-logo .fa-facebook {
     color: #097DEB;
+} */
+
+.start-section__list-logo .fa-linkedin {
+    color: var(--linkedin);
 }
+
+.start-section__list-logo .fa-github {
+    color: var(--github);
+}
+
+.start-section__list-logo .fa-facebook {
+    color: var(--facebook);
+}
+
 
 /* end start-section */
 
@@ -135,27 +176,33 @@ main {
 .about-section {
     height: auto;
     width: 100%;
-    margin-top: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #F7F7F7;
+    background-color: var(--primary-color);
+}
+
+.about-section__introduction-content {
+    color: var(--foreground-color);
 }
 
 .about-section__education-content {
     width: 100%;
+    color: var(--foreground-color);
+
 }
 
 .about-section__graduation-container {
     height: 400px;
     width: 350px;
-    background-color: #4976E7;
+    background-color: var(--primary-color);
+    border: 1px solid var(--foreground-color);
+    color: var(--foreground-color);
     border-radius: 10px;
 }
 
 .about-section__school-item-container {
     width: 350px;
     height: 250px;
-    background-color: #E4E4E4;
+    background-color: var(--card);
+    border: 1px solid var(--foreground-color);
     border-radius: 10px;
 }
 
@@ -183,15 +230,8 @@ main {
 
 .skill-section {
     height: auto;
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #F7F7F7;
-}
-
-
-.skill-section__tech-stack-container {
-    padding-top: 100px;
+    background-color: var(--primary-color);
+    color: var(--foreground-color);
 }
 
 .skill-section__tech-stack-container i {
@@ -229,8 +269,10 @@ main {
 .skill-section__stack-item-container {
     width: 300px;
     height: 250px;
-    background-color: #E4E4E4;
+    background-color: var(--card);
     border-radius: 10px;
+    border: 1px solid var(--foreground-color);
+
 }
 
 .skill-section__stack-item-container {
@@ -242,38 +284,38 @@ main {
     cursor: pointer;
 }
 
-.skill-section__vanilla-tech-stack .external-link:nth-of-type(1) .skill-section__stack-item-container:hover{
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(1) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(221, 75, 37, .5);
     border: 1px solid rgba(221, 75, 37, .5);
 
 }
 
-.skill-section__vanilla-tech-stack .external-link:nth-of-type(2) .skill-section__stack-item-container:hover{
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(2) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(37, 75, 221, .5);
     border: 1px solid rgba(37, 75, 221, .5);
 }
 
-.skill-section__vanilla-tech-stack .external-link:nth-of-type(3) .skill-section__stack-item-container:hover{
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(3) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(233, 212, 77, .5);
     border: 1px solid rgba(233, 212, 77, .5);
 }
 
-.skill-section__vanilla-tech-stack .external-link:nth-of-type(4) .skill-section__stack-item-container:hover{
+.skill-section__vanilla-tech-stack .external-link:nth-of-type(4) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(115, 119, 173, .5);
     border: 1px solid rgba(115, 119, 173, .5);
 }
 
-.skill-section__frawework-stack .external-link:nth-of-type(1) .skill-section__stack-item-container:hover{
+.skill-section__frawework-stack .external-link:nth-of-type(1) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(255, 0, 0, .5);
     border: 1px solid rgba(255, 0, 0, .5);
 }
 
-.skill-section__frawework-stack .external-link:nth-of-type(2) .skill-section__stack-item-container:hover{
+.skill-section__frawework-stack .external-link:nth-of-type(2) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(109, 16, 237, .5);
     border: 1px solid rgba(109, 16, 237, .5);
 }
 
-.skill-section__frawework-stack .external-link:nth-of-type(3) .skill-section__stack-item-container:hover{
+.skill-section__frawework-stack .external-link:nth-of-type(3) .skill-section__stack-item-container:hover {
     box-shadow: -5px 6px rgba(53, 190, 248, .5);
     border: 1px solid rgba(53, 190, 248, .5);
 }
@@ -294,7 +336,8 @@ main {
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #F7F7F7;
+    background-color: var(--primary-color);
+    color: var(--foreground-color);
 }
 
 .experience-section__work-content {
@@ -304,10 +347,12 @@ main {
 }
 
 .experience-section_experience-container {
-    background-color: #E4E4E4;
+    background-color: var(--card);
     width: auto;
     height: 150px;
     border-radius: 10px;
+    border: 1px solid var(--foreground-color);
+
 }
 
 .experience-section__btn-group button {
@@ -327,13 +372,33 @@ main {
     box-shadow: none !important;
 }
 
-.experience-section__image-container{
+.experience-section__image-container {
     width: 100%;
 }
 
-.experience-section__image-container img{
+.experience-section__image-container img {
     height: 200px;
     width: 100%;
+}
+
+.skill-section__output-item-container {
+    width: 100%;
+    height: 350px;
+    background-color: var(--card);
+    border-radius: 10px;
+    border: 1px solid var(--foreground-color);
+}
+
+.skill-section__output-button a {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid var(--foreground-color);
+}
+
+.skill-section__output-button a:hover {
+    background-color: var(--foreground-color);
+    color: var(--primary-color);
+    border: 1px solid var(--foreground-color);
 }
 
 /* end experience-section */
@@ -343,8 +408,11 @@ main {
 footer {
     width: 100%;
     height: auto;
-    background-color: #4976E7;
+    background-color: var(--footer);
+    color: var(--foreground-color);
+    border-top: 1px solid var(--foreground-color);
 }
+
 
 .footer-section__list-logo .fa-linkedin {
     color: #fff;
@@ -362,6 +430,7 @@ footer {
 
 /*Sweet Alert 2 Custom Class */
 .swal2-cancel.custom-cancel-button {
-    color: #000; /* Change this to your desired text color */
+    color: #000;
+    /* Change this to your desired text color */
     background-color: #F0F0F0;
-  }
+}
