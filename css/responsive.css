@@ -3,29 +3,33 @@
         padding-left: 0;
         height: auto;
     }
+
     .about-section__school-item-container {
         width: 100%;
     }
+
     .about-section__graduation-container {
         width: 100%;
     }
+
     .start-section__list-logo {
         width: 100%;
     }
-    .skill-section__stack-item-container{
+
+    .skill-section__stack-item-container {
         width: 100%;
     }
 
-    .tailwind-logo{
+    .tailwind-logo {
         margin: 0 auto;
     }
 
-    .experience-section__image-container img{
+    .experience-section__image-container img {
         height: 175px;
         width: 100%;
     }
 
-    
+
 }
 
 @media (min-width: 700px) and (max-width: 1000px) {
@@ -33,25 +37,49 @@
         padding-left: 0;
         height: auto;
     }
+
     .about-section__school-item-container {
         width: 40%;
+        height: 300px;
     }
+
     .about-section__graduation-container {
         width: 70%;
     }
+
     .start-section__list-logo {
         width: 100%;
     }
-    .skill-section__stack-item-container{
-        width: 100%;
+
+    .skill-section__stack-item-container {
+        width: 90%;
+        margin: 0 auto;
+
     }
 
-    .tailwind-logo{
+    .tailwind-logo {
         margin: 0 auto;
     }
 
-    .experience-section__image-container img{
+    .experience-section_experience-container {
+        background-color: var(--card);
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        margin: 0 auto;
+        border: 1px solid var(--foreground-color);
+    }
+
+
+    .experience-section__image-container img {
         height: 400px;
         width: 100%;
     }
+
+    .skill-section__output-item-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
 }
