@@ -8,6 +8,7 @@
     --foreground-color: #fff;
     --span-text: #fff;
     --card: #000;
+    --white: #fff;
     --linkedin: #fff;
     --github: #fff;
     --facebook: #fff;
@@ -16,6 +17,8 @@
     --blue: blue;
     --footer: #000;
     --footer-color: #fff;
+    --word: #185ABD;
+    --pdf: #B30B00;
 }
 
 * {
@@ -172,6 +175,28 @@ main {
 .start-section__media-content img{
     margin: 0 auto;
 }
+
+.start-section__cv-download-container-word{
+    border: 1px solid var(--foreground-color);
+    background-color: var(--word);
+    color: var(--white);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.start-section__cv-download-container-pdf{
+    border: 1px solid var(--foreground-color);
+    background-color: var(--pdf);
+    color: var(--white);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+.start-section__cv-download-container .cv-download-word{
+   background-color: var(--word);
+}
+
 
 /* end start-section */
 

@@ -95,6 +95,7 @@ const nightMode = () => {
                 document.documentElement.style.setProperty('--span-text', '#fff')
                 document.documentElement.style.setProperty('--footer', '#000')
                 document.documentElement.style.setProperty('--card', '#000')
+                document.documentElement.style.setProperty('--cv', '#fff')
 
             } else {
                 //set to lightmode
@@ -111,6 +112,7 @@ const nightMode = () => {
                 document.documentElement.style.setProperty('--span-text', '#4976E7')
                 document.documentElement.style.setProperty('--footer', '#4976E7')
                 document.documentElement.style.setProperty('--card', '#fff')
+                document.documentElement.style.setProperty('--cv', '#4976E7')
 
 
             }
@@ -202,3 +204,6 @@ const alertLink = () => {
 }
 
 alertLink()
+
+
+
